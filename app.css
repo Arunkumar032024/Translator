@@ -22,6 +22,89 @@ body{
     padding: 15px;
     box-shadow: 2px 2px 2px 2px #10439F;
 }
+.container h1{
+    margin-bottom: 16px;
+    background: -webkit-linear-gradient(45deg, #874CCC, #C65BCF, #10439F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-boxes{
+    display: flex;
+}
+.text-boxes textarea{
+    flex: 1;
+    border: 1px solid #10439F;
+    outline: none;
+    height: 200px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.text-boxes .input-text{
+    border-top-left-radius: 4px;
+}
+.text-boxes .output-text{
+    border-top-right-radius: 4px;
+    border-left: none;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #10439F;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 16px;
+}
+.controls i{
+    color: #10439F;
+    font-size: 22px;
+    line-height: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+.controls i:hover{
+    background-color: #10439F;
+    color: #fff;
+}
+.controls .input-controls, 
+.controls .output-controls{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.controls .select{
+    display: flex;
+    align-items: center;
+}
+.controls .select i{
+    font-size: 16px;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+.controls .select i:hover{
+    color: #10439F;
+    background-color: transparent;
+}
+.controls select{
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #10439F;
+    font-weight: bold;
+    padding-right: 5px;
+    cursor: pointer;
+}
 .translate-btn{
     width: 100%;
     padding: 10px 0;
