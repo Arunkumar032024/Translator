@@ -4,3 +4,5 @@ A translator app crafted with HTML, CSS, and JavaScript provides seamless lingui
 Basic file setup
 <br>
 Complete UI
+<br>
+Add language translation feature
