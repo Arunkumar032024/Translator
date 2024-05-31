@@ -6,3 +6,5 @@ Basic file setup
 Complete UI
 <br>
 Add language translation feature
+<br>
+Add Speaking feature

@@ -4,6 +4,9 @@ const dorpdowns = document.querySelectorAll("select");
 const translateBtn = document.querySelector(".translate-btn");
 const inputText = document.querySelector(".input-text");
 const outputText = document.querySelector(".output-text");
+const speakFrom = document.querySelector("#speakFrom");
+const speakTo = document.querySelector("#speakTo");
+
 for(let select of dorpdowns){
     for(let currCode in countryList){
         let newOption = document.createElement("option");
@@ -32,6 +35,24 @@ async function translation(){
     }
     
 }
+
+function spaekText(text, language){
+    const synth = window.speechSynthesis;
+    const voices = synth.getVoices();
+    const utterThis = new SpeechSynthesisUtterance(text);
+    console.log(voices)
+    utterThis.lang = language;
+    synth.speak(utterThis);
+}
+
+speakFrom.addEventListener("click", ()=>{
+    console.log(inputText.value, inputLanList.value)
+    spaekText(inputText.value, inputLanList.value);
+})
+speakTo.addEventListener("click", ()=>{
+    console.log(outputText.value, outputLanList.value)
+    spaekText(outputText.value, outputLanList.value);
+})
 
 translateBtn.addEventListener("click", translation);
 inputText.addEventListener("keydown", translation);
