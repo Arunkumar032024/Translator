@@ -121,12 +121,6 @@ body{
 }
 
 @media (max-width: 480px) {
-    /* .controls i{
-        height: 15px;
-        width: 15px;
-        font-size: 11px;
-        padding: 2px;
-    } */
     .controls .input-controls{
         flex-wrap: wrap-reverse;
     }
