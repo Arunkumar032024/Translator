@@ -40,6 +40,13 @@ body{
     font-size: 16px;
     line-height: 20px;
 }
+.text-boxes textarea::-webkit-scrollbar{
+    width: 3px;
+    background-color: #fff;
+}
+.text-boxes textarea::-webkit-scrollbar-thumb{
+    background-color: #ddd;
+}
 .text-boxes .input-text{
     border-top-left-radius: 4px;
 }
@@ -51,7 +58,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    padding: 5px;
     border: 1px solid #10439F;
     border-top: none;
     border-bottom-left-radius: 4px;
@@ -91,12 +98,7 @@ body{
     width: auto;
     height: auto;
 }
-.controls .select i:hover{
-    color: #10439F;
-    background-color: transparent;
-}
 .controls select{
-    -webkit-appearance: none;
     background-color: transparent;
     border: none;
     outline: none;
@@ -104,6 +106,7 @@ body{
     font-weight: bold;
     padding-right: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 .translate-btn{
     width: 100%;
@@ -114,4 +117,24 @@ body{
     border: none;
     outline: none;
     background: linear-gradient(45deg, #874CCC, #C65BCF, #F27BBD, #10439F);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    /* .controls i{
+        height: 15px;
+        width: 15px;
+        font-size: 11px;
+        padding: 2px;
+    } */
+    .controls .input-controls{
+        flex-wrap: wrap-reverse;
+    }
+    .controls .output-controls{
+        flex-wrap: wrap;
+    }
+    .controls select{
+        margin: 5px 0;
+        padding: 0;
+    }
 }

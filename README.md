@@ -8,3 +8,7 @@ Complete UI
 Add language translation feature
 <br>
 Add Speaking feature
+<br>
+Add copy feature
+<br>
+Complete Translator

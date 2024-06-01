@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="app.css" />
 </head>
+
 <body>
     <!-- translator container -->
     <main class="container">
@@ -21,21 +23,19 @@
         </div>
         <div class="controls">
             <div class="input-controls">
-                <i class="fa-solid fa-volume-high" id="speakFrom"></i>
-                <i class="fa-solid fa-copy"></i>
-                <div class="select">
-                    <select id="input-lan" name="from"></select>
-                    <label for="input-lan"><i class="fa-solid fa-chevron-down"></i></label>
+                <div>
+                    <i class="fa-solid fa-volume-high" id="speakFrom"></i>
+                    <i class="fa-solid fa-copy" id="copyFrom"></i>
                 </div>
+                <select id="input-lan" name="from"></select>
             </div>
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right-arrow-left" id="lanInterChange"></i>
             <div class="output-controls">
-                <div class="select">
-                    <select id="output-lan" name="to"></select>
-                    <label for="output-lan"><i class="fa-solid fa-chevron-down"></i></label>
+                <select id="output-lan" name="to"></select>
+                <div>
+                    <i class="fa-solid fa-volume-high" id="speakTo"></i>
+                    <i class="fa-solid fa-copy" id="copyTo"></i>
                 </div>
-                <i class="fa-solid fa-volume-high" id="speakTo"></i>
-                <i class="fa-solid fa-copy"></i>
             </div>
         </div>
         <button class="translate-btn">Translate Language</button>
@@ -44,4 +44,5 @@
     <script src="countries.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
